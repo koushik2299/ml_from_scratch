@@ -42,6 +42,11 @@ class DecisionTree:
         #create child nodes
         left_idxs,right_idxs = self._split()
 
+    def _most_common_value(self,y):
+        counter = Counter(y)
+        value = counter.most_common(1)[0][0]
+        return value
+
     def _best_split(self,X,y,feat_idxs):
         best_gain = -1
         split_idx, split_threshold = None, None
@@ -53,8 +58,58 @@ class DecisionTree:
             for thr in thresholds:
                 gain = self._information_gain(y,X_column,thr)
 
-                if gain > best_gain 
+                if gain > best_gain:
+                    best_gain = gain
+                    split_idx, split_threshold = feat_idx, thr 
+
+        return split_idx, split_threshold
     
+    def _information_gain(self,X_column,y,threshold):
+        
+        #parent entropy
+        parent_entropy = self._entropy(y)
+        
+        #create childeren
+        left_idxs,right_idxs = self._split(X_column,threshold)
+
+        if len(left_idxs) == 0 or len(right_idxs) == 0:
+            return 0
+        
+        #calculate the weighted avg. entropy of children
+        n = len(y)
+        n_l,n_r = len(left_idxs), len(right_idxs)
+        e_l, e_r = self._entropy(y[left_idxs]),self._entropy(y[right_idxs])
+        child_entropy = (n_l/n) * e_l + (n_r/n) * e_r
+
+        #calculate the IG
+        information_gain = parent_entropy
+
+        return information_gain
+
+    def _split(self,X,thr):
+        left_idxs = np.argwhere(X<=thr).flatten()
+        right_idxs = np.argwhere(X>thr).flatten()
+
+    def _entropy(self,X,y):
+        hist = np.bincount(X)
+        ps = hist/len(y)
+        return -np.sum([p*np.log(p) for p in ps if p>0])
+    
+    def predict(self,X):
+        return np.array([self._traverse_tree(x,self.root) for x in X])
+    
+    def _traverse_tree(self,x,node):
+        if node.is_leaf_node():
+            return node.value()
+        
+        if x[node.feature] <= node.threshold:
+            
+
+
+
+
+
+
     def _most_common_value(self,y):
         counter = Counter(y)
         value = counter.most_common(1)[0][0]
