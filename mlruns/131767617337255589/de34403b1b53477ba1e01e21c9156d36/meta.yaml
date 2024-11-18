@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/koushik/Documents/GitHub/ml_from_scratch/mlruns/131767617337255589/de34403b1b53477ba1e01e21c9156d36/artifacts
+end_time: 1731894179817
+entry_point_name: ''
+experiment_id: '131767617337255589'
+lifecycle_stage: active
+run_id: de34403b1b53477ba1e01e21c9156d36
+run_name: orderly-dove-710
+run_uuid: de34403b1b53477ba1e01e21c9156d36
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731894179801
+status: 4
+tags: []
+user_id: koushik

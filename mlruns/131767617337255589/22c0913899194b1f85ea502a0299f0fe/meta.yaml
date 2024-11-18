@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/koushik/Documents/GitHub/ml_from_scratch/mlruns/131767617337255589/22c0913899194b1f85ea502a0299f0fe/artifacts
+end_time: 1731894201987
+entry_point_name: ''
+experiment_id: '131767617337255589'
+lifecycle_stage: active
+run_id: 22c0913899194b1f85ea502a0299f0fe
+run_name: omniscient-crane-760
+run_uuid: 22c0913899194b1f85ea502a0299f0fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731894190484
+status: 3
+tags: []
+user_id: koushik
