@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/231569184113886330/c3c29e45a6e94166930d8730043f071c/artifacts
+end_time: 1731983904181
+entry_point_name: ''
+experiment_id: '231569184113886330'
+lifecycle_stage: active
+run_id: c3c29e45a6e94166930d8730043f071c
+run_name: XGBClassifier
+run_uuid: c3c29e45a6e94166930d8730043f071c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731983903336
+status: 3
+tags: []
+user_id: koushik

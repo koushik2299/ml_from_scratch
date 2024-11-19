@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/381524109034639146/d65c6c3819394d7e96e548673b276c99/artifacts
+deleted_time: 1731985458060
+end_time: 1731985388347
+entry_point_name: ''
+experiment_id: '381524109034639146'
+lifecycle_stage: deleted
+run_id: d65c6c3819394d7e96e548673b276c99
+run_name: Random_Forest
+run_uuid: d65c6c3819394d7e96e548673b276c99
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731985387487
+status: 3
+tags: []
+user_id: koushik

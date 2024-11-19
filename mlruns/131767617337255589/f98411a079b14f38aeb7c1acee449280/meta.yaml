@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/koushik/Documents/GitHub/ml_from_scratch/mlruns/131767617337255589/f98411a079b14f38aeb7c1acee449280/artifacts
+end_time: 1731980694442
+entry_point_name: ''
+experiment_id: '131767617337255589'
+lifecycle_stage: active
+run_id: f98411a079b14f38aeb7c1acee449280
+run_name: glamorous-bug-229
+run_uuid: f98411a079b14f38aeb7c1acee449280
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731980693422
+status: 3
+tags: []
+user_id: koushik
